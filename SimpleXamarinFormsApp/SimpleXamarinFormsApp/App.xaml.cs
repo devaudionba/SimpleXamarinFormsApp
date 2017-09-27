@@ -13,7 +13,7 @@ namespace SimpleXamarinFormsApp
         {
             InitializeComponent();
 
-            MainPage = new SimpleXamarinFormsApp.MainPage();
+            MainPage = new SimpleXamarinFormsApp.View.CurrentLocationView();
         }
 
         protected override void OnStart()

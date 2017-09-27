@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SimpleXamarinFormsApp.ViewModel;assembly=SimpleXamarinFormsApp"
+             x:Class="SimpleXamarinFormsApp.View.CurrentLocationView">
+    <ContentPage.BindingContext>
+        <local:CurrentLocationViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <Label Text="{Binding Name,StringFormat='Naam: {0}'}"
+                FontSize="Large"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+        </Label>
+        <Label Text="{Binding StartTime, StringFormat='Aanvang: {0:g}'}"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+        </Label>
+        <Label Text="{Binding ElapsedTime, StringFormat='Verstreken tijd: \{0:h\\:mm}'}"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+        </Label>
+        <Label Text="{Binding GpsLocation, StringFormat='GPS: {0}'}"
+                HorizontalOptions="Center"
+                VerticalOptions="StartAndExpand">
+        </Label>
+        <DatePicker BackgroundColor="Yellow" Rotation="15" TextColor="Red" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>
