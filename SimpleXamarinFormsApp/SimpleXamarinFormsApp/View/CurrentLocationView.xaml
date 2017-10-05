@@ -25,6 +25,13 @@
                 HorizontalOptions="Center"
                 VerticalOptions="StartAndExpand">
         </Label>
+        <TextCell Text="Vul hier wat in"/>
+        <Button Text="Opslaan"
+                Clicked="Button_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+        </Button>
+
         <DatePicker BackgroundColor="Yellow" Rotation="15" TextColor="Red" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center"/>
     </StackLayout>
 </ContentPage>

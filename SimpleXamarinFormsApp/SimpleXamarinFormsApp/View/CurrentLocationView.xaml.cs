@@ -16,5 +16,19 @@ namespace SimpleXamarinFormsApp.View
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            App.Database.SaveItemAsync(new Model.LoggedTimesheetItem
+            {
+                ID = 3,
+                StartDate = DateTime.Now,
+                LoggedLocation = new Model.Location
+                {
+                     ID = 1,
+                     Name = "Test Locatie"
+                }
+            });
+        }
     }
 }
